@@ -6,4 +6,4 @@ script:
     - pytest
 
 install:
-    - pip install -r requirements-dev.txt
+    - sudo sh install-deps.sh

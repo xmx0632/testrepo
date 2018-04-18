@@ -1,1 +1,3 @@
-echo "hello travis"
+echo "############ hello,world ############"
+
+pip install -r requirements-dev.txt

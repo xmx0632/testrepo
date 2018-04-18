@@ -1,0 +1,6 @@
+language: python
+sudo: required
+before_install: sudo pip3 install django
+script: py.test
+
+install: ./install-dependencies.sh

@@ -20,9 +20,9 @@ install:
     
     - sudo apt-get update
     - pip3 search ipfsapi
-    - pip3 search eth-keyfile
     - pip3 search qt5reactor
     - pip3 search web3
     - echo "----------------------------"
     - sudo sh install-deps.sh
     - pip3 install web3==4.1.0
+    - pip3 install eth-keyfile

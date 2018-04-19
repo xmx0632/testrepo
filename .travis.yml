@@ -15,9 +15,30 @@ addons:
 install:
     - sudo add-apt-repository main
     - sudo add-apt-repository universe
-    
     - sudo apt update
-
     - sudo apt-get install software-properties-common
-       
+    
+    - echo "-------market----------"
+    - pip3 djangorestframework==3.7.3
+    - pip3 django==2.0.3
+    - pip3 psycopg2
+    - pip3 toml==0.9.4
+    - pip3 django-rest-elasticsearch==0.4
+    - echo "-------wallet-----------"
+    
+    - pip3 search ipfsapi
+    - pip3 search qt5reactor
+    - pip3 search web3==4.1.0
+    - echo "----------------------------"
+    - pip3 install eth-keyfile
+    
+    - pip3 install pyqt5
+    - pip3 install twisted
+    - pip3 install treq
+    - pip3 install protobuf
+    - pip3 install cryptography
+    - pip3 install sqlalchemy
+    - pip3 install toml
+    - pip3 install boto3
+    
     - sudo sh install-deps.sh

@@ -4,7 +4,7 @@ python:
     - "3.6"
 script:
     - pytest
-# sudo: true
+sudo: true
 
 addons:
   apt:

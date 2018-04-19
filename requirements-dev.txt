@@ -2,3 +2,4 @@
 ipfsapi
 eth-keyfile
 qt5reactor
+web3

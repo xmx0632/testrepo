@@ -2,8 +2,8 @@ dist: trusty
 language: python
 python:
     - "3.6"
-script:
-    - pytest
+#script:
+#    - pytest
 # sudo: true
 
 addons:
@@ -19,4 +19,10 @@ install:
     - sudo add-apt-repository multiverse
     
     - sudo apt-get update
+    - pip3 search ipfsapi
+    - pip3 search eth-keyfile
+    - pip3 search qt5reactor
+    - pip3 search web3
+    - echo "----------------------------"
     - sudo sh install-deps.sh
+    - pip3 install web3==4.1.0

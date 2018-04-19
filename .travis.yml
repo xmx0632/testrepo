@@ -3,7 +3,7 @@ language: python
 python:
     - "3.6"
 script:
-    - pytest
+    - python test/test_core_logic.py
 sudo: true
 
 addons:

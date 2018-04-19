@@ -26,9 +26,9 @@ install:
     - pip3 install django-rest-elasticsearch==0.4
     - echo "-------wallet-----------"
     
-    - pip3 search ipfsapi
-    - pip3 search qt5reactor
-    - pip3 search web3==4.1.0
+    - pip3 install ipfsapi
+    - pip3 install qt5reactor
+    - pip3 install web3==4.1.0
     - echo "----------------------------"
     - pip3 install eth-keyfile
     
@@ -41,4 +41,3 @@ install:
     - pip3 install toml
     - pip3 install boto3
     
-    - sudo sh install-deps.sh

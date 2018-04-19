@@ -4,6 +4,8 @@ python:
     - "3.6"
 script:
     - pytest
-
+# sudo: true
 install:
+    - sudo add-apt-repository universe
+    - sudo apt-get update
     - sudo sh install-deps.sh

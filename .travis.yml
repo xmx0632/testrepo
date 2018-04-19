@@ -13,8 +13,6 @@ addons:
       - "python3-pip"
       
 install:
-    - sudo mv /etc/apt/sources.list /etc/apt/sources.list.cp
-    - sudo cp source.list /etc/apt/sources.list
     - sudo add-apt-repository main
     - sudo add-apt-repository universe
     - sudo add-apt-repository restricted

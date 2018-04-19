@@ -19,11 +19,11 @@ install:
     - sudo add-apt-repository multiverse
     
     - sudo apt-get update
-    - sudo apt-install -y python3-pyqt5
-    - sudo apt-install -y python3-twisted python3-treq
-    - sudo apt-install -y python3-protobuf
-    - sudo apt-install -y protobuf-compiler python3-protobuf
-    - sudo apt-install -y python3-cryptography python3-sqlalchemy python3-toml python3-boto3
+    - sudo apt-get install -y python3-pyqt5
+    - sudo apt-get install -y python3-twisted python3-treq
+    - sudo apt-get install -y python3-protobuf
+    - sudo apt-get install -y protobuf-compiler python3-protobuf
+    - sudo apt-get install -y python3-cryptography python3-sqlalchemy python3-toml python3-boto3
     
     - pip3 search ipfsapi
     - pip3 search qt5reactor

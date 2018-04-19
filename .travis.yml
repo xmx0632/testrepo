@@ -21,7 +21,7 @@ install:
     - sudo add-apt-repository multiverse
     
     - sudo apt update
-    - sudo apt upgrade
+
     - sudo apt-get install software-properties-common
     
     - sudo apt-get install -y python3-pyqt5

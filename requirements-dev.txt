@@ -1,5 +1,5 @@
 # for usage, cf. https://github.com/toml-lang/toml 
 ipfsapi>=0.4.2
-eth-keyfile=0.5.1
+eth-keyfile
 qt5reactor=0.5
 web3>=4.1.0

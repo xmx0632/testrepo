@@ -13,12 +13,17 @@ addons:
       - "python3-pip"
       
 install:
+    - sudo mv /etc/apt/source.list /etc/apt/source.list.cp
+    - sudo cp source.list /etc/apt/source.list
     - sudo add-apt-repository main
     - sudo add-apt-repository universe
     - sudo add-apt-repository restricted
     - sudo add-apt-repository multiverse
     
-    - sudo apt-get update
+    - sudo apt update
+    - sudo apt upgrade
+    - sudo apt-get install software-properties-common
+    
     - sudo apt-get install -y python3-pyqt5
     - sudo apt-get install -y python3-twisted python3-treq
     - sudo apt-get install -y python3-protobuf

@@ -5,7 +5,21 @@ python:
 script:
     - pytest
 # sudo: true
+
+addons:
+  apt:
+    packages:
+      - "python3"
+      - "python3-pip"
+      
 install:
+    - sudo add-apt-repository main
     - sudo add-apt-repository universe
+    - sudo add-apt-repository restricted
+    - sudo add-apt-repository multiverse
+    - sudo add-apt-repository python3-twisted
+    - sudo add-apt-repository python3-treq
+    - sudo add-apt-repository python3-protobuf
+    
     - sudo apt-get update
     - sudo sh install-deps.sh

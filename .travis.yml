@@ -25,10 +25,15 @@ install:
     - sudo apt-get install software-properties-common
     
     - sudo apt-get install -y python3-pyqt5
-    - sudo apt-get install -y python3-twisted python3-treq
+    - sudo apt-get install -y python3-twisted 
+    - sudo apt-get install -y python3-treq
     - sudo apt-get install -y python3-protobuf
-    - sudo apt-get install -y protobuf-compiler python3-protobuf
-    - sudo apt-get install -y python3-cryptography python3-sqlalchemy python3-toml python3-boto3
+    - sudo apt-get install -y protobuf-compiler 
+    - sudo apt-get install -y python3-protobuf
+    - sudo apt-get install -y python3-cryptography 
+    - sudo apt-get install -y python3-sqlalchemy 
+    - sudo apt-get install -y python3-toml 
+    - sudo apt-get install -y python3-boto3
     
     - pip3 search ipfsapi
     - pip3 search qt5reactor

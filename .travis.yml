@@ -20,21 +20,4 @@ install:
 
     - sudo apt-get install software-properties-common
        
-    
-    - pip3 search ipfsapi
-    - pip3 search qt5reactor
-    - pip3 search web3
-    - echo "----------------------------"
     - sudo sh install-deps.sh
-    - pip3 install web3==4.1.0
-    - pip3 install eth-keyfile
-    
-    - pip3 install pyqt5
-    - pip3 install twisted
-    - pip3 install treq
-    - pip3 install protobuf
-    - pip3 install cryptography
-    - pip3 install sqlalchemy
-    - pip3 install toml
-    - pip3 install boto3
-    

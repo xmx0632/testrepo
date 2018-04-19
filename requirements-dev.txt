@@ -1,4 +1,14 @@
 # for usage, cf. https://github.com/toml-lang/toml
 ipfsapi
-eth-keyfile
 qt5reactor
+web3==4.1.0
+eth-keyfile
+
+pyqt5
+twisted
+treq
+protobuf
+cryptography
+sqlalchemy
+toml
+boto3

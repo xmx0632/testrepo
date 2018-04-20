@@ -7,6 +7,11 @@ which virtualenv
 
 python3 --version
 
+if [ ! -d "~/.pip" ]; then
+    echo "create .pip"
+    mkdir ~/.pip
+fi
+
 if [ ! -f "~/.pip/pip.conf" ]; then
     echo "pip not exist"
     cat > ~/.pip/pip.conf <<EOF

@@ -8,14 +8,16 @@ which virtualenv
 python3 --version
 
 if [ ! -d "venv" ]; then
-    pwd
+    echo "no venv"
 fi
 
 virtualenv -p /usr/bin/python3 venv
 echo "activate"
 
-ls $WORKSSPACE/$JOB_NAME/venv/
+pwd
+ls
 
-. $WORKSSPACE/$JOB_NAME/venv/bin/activate
+
+#. $WORKSSPACE/$JOB_NAME/venv/bin/activate
 echo "install ..."
-pip install -r requirements-dev.txt --download-cache=/tmp/$JOB_NAME
+pip3 install -r requirements-dev.txt --download-cache=/tmp/$JOB_NAME

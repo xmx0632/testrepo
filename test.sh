@@ -7,6 +7,15 @@ which virtualenv
 
 python3 --version
 
+if [ ! -f "~/.pip/pip.conf" ]; then
+    echo "pip not exist"
+    cat > ~/.pip/pip.conf <<EOF
+[global]
+index-url=https://pypi.tuna.tsinghua.edu.cn/simple
+EOF
+    echo "pip updated"
+fi
+
 if [ ! -d "venv" ]; then
     echo "no venv"
 fi
@@ -14,8 +23,6 @@ fi
 virtualenv -p /usr/bin/python3 venv
 echo "activate"
 
-pwd
-ls
 . venv/bin/activate
 
 #. $WORKSSPACE/$JOB_NAME/venv/bin/activate

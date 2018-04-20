@@ -16,8 +16,8 @@ echo "activate"
 
 pwd
 ls
-
+. venv/bin/activate
 
 #. $WORKSSPACE/$JOB_NAME/venv/bin/activate
 echo "install ..."
-pip3 install -r requirements-dev.txt --download-cache=/tmp/$JOB_NAME
+pip3 install -r requirements-dev.txt

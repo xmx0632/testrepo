@@ -20,4 +20,6 @@ ls
 
 #. $WORKSSPACE/$JOB_NAME/venv/bin/activate
 echo "install ..."
-pip3 install -r requirements-dev.txt
+# pip3 install -r requirements-dev.txt
+pip3 install -r requirement.txt
+
